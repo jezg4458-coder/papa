@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripciones · Parche Dev 2026</title>
+    <meta name="description" content=" Inscripciones abiertas para Parche Dev 2026. Regístrate y asegura tu lugar en el evento de desarrollo más esperado del año">
+</head>
+<body>
+    <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+    |<header>
+        <nav>
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="index.html" >Inicio</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="ponentes.html">Ponentes</a></li>
+                <li><a href="inscripcion.html" aria-current="page">Inscripciones</a></li>
+                <li><a href="conducta.html">Código de Conducta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <h1>Inscripcion</h1>
+            <p>La entrada es gratuita y los cupos son limitados. Completa el formulario para reservar el tuyo.</p>
+            <p>Los campos marcados con * son obligatorios.</p>
+        
+        <form action="gracias.html" method="get">
+     <fieldset>
+        <legend>Grupo: Tus datos</legend>
+        <label for="Nombre">Nombre completo*:</label><br>
+        <input type="text" id="Nombre" name="nombre" required>
+        <br>
+        <label for="Correo">Correo electrónico*:</label><br>
+        <input type="email" id="Correo" name="correo" required>
+        <br>
+        <label for="Celular">Celular</label><br>
+        <input type="tel" id="Celular" name="celular" pattern="3[0-9]{9}" maxlength="10" placeholder="Ej: 3102195641">
+        <br><br>
+        <label for="Ciudad">Ciudad</label>
+        <select id="Ciudad" name="ciudad">
+            <option value="Medellin">Medellin</option>
+            <option value="Bello">Bello</option>
+            <option value="Itagui">Itagui</option>
+            <option value="Envigado">Envigado</option>
+            <option value="Sabaneta">Sabaneta</option>
+            <option value="La_Estrella">La Estrella</option>
+            <option value="Caldas">Caldas</option>
+            <option value="Copacabana">Copacabana</option>
+            <option value="Girardota">Girardota</option>
+            <option value="Barbosa">Barbosa</option>
+            <option value="Otra">Otra</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>¿En qué momento estás?</legend>
+        <input type="radio" id="empezando" name="momento" value="empezando" required>
+        <label for="empezando">Estoy empezando a programar</label>
+
+        <input type="radio" id="programo" name="momento" value="programo" required>
+        <label for="programo">Ya programo, pero no trabajo en tecnología</label>
+
+        <input type="radio" id="trabajando" name="momento" value="trabajando" required>
+        <label for="trabajando">Trabajo en tecnología</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>¿Qué temas te interesan?</legend>
+        <input type="checkbox" id="Desarrollo" name="temas" value="Desarrollo">
+        <label for="Desarrollo">Desarrollo web</label>
+
+        <input type="checkbox" id="Datos" name="temas" value="Datos">
+        <label for="Datos">Datos y SQL</label>
+
+        <input type="checkbox" id="Accesibilidad" name="temas" value="Accesibilidad">
+        <label for="Accesibilidad">Accesibilidad</label>
+
+        <input type="checkbox" id="Python" name="temas" value="Python">
+        <label for="Python">Python</label>
+
+        <input type="checkbox" id="Nube" name="temas" value="Nube">
+        <label for="Nube">Despliegue en la nube</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Agenda</legend>
+        <p>Quiero inscribirme al taller “Tu primer bot con Python” (30 cupos, trae tu computador)</p>  
+
+        <input type="radio" id="agenda_si" name="agenda" value="si">
+        <label for="agenda_si">Sí</label>
+
+        <input type="radio" id="agenda_no" name="agenda" value="no">
+        <label for="agenda_no">No</label>
+        <br>
+
+        <label for="camisas">¿Cuál talla de camiseta eres?</label>
+        <select name="camisas" id="camisas">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+    </fieldset>
+
+    <p>¿Qué esperas aprender en Parche Dev?</p>
+    <textarea name="expectativas" rows="10" cols="50" maxlength="300"></textarea>
+    <br>
+
+    <p>Acepto el código de <a href="conducta.html">conducta del evento</a></p>  
+    <input type="radio" id="conducta_si" name="confirmar" value="si" required>
+    <label for="conducta_si">Sí</label>
+
+    <input type="radio" id="conducta_no" name="confirmar" value="no" required>
+    <label for="conducta_no">No</label>
+    <br><br>
+
+    <button type="submit">Ingresar</button>
+</form>
+ 
+
+    </main>
+</body>
+</html>
